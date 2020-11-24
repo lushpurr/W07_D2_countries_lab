@@ -3,8 +3,8 @@
   <h3>Neighbouring Countries</h3>
     <ul id="neighbouring_countries">
       <li v-for="neighbouringCountry in neighbouringCountries">
-        <p> {{neighbouringCountry.name}} </p>
-        <img class="med-flag" src="neighbouringCountry.flag"
+        <span> {{neighbouringCountry.name}} </span>
+        <img class="med-flag" :src="neighbouringCountry.flag"/>
       </li>
     </ul>
   </div>
@@ -18,6 +18,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+li {
+  display:flex;
+  flex-flow: row;
+}
 
 .med-flag {
   height: 40px

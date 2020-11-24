@@ -62,6 +62,9 @@ export default {
 </script>
 
 <style>
+li {
+  list-style-type:none;
+}
 .small-flag {
   height: 20px
 }
